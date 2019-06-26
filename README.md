@@ -24,9 +24,13 @@ python evaluate.py
 ```
 
 ## Running speed
-test running speed of ShelfNet
+test running speed of ShelfNet18
 ```
 python test_speed.py
+```
+test running speed of ShelfNet101
+```
+python test_shelfnet_4_levels_speed.py
 ```
 
 test running speed of Lightweight refinenet
