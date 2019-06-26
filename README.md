@@ -4,7 +4,7 @@ This repo is based on two implementations of [BiSeNet1](https://github.com/CoinC
 
 ## Data Preparation
 Download fine labelled dataset from Cityscapes server, and decompress into ```./data``` folder. <br />
-You might need to midify data path [here](https://github.com/NoName-sketch/anonymous/blob/master/ShelfNet18_realtime/train.py/L38)
+You might need to midify data path [here](https://github.com/NoName-sketch/anonymous/blob/master/ShelfNet18_realtime/train.py/#L38)
 
 ## Two models and the pretrained weights
 We provide two models, ShelfNet18 with 32 base channels for real-time semantic segmentation, and ShelfNet34 with 64 base channels for non-real-time semantic segmentation. The pre-trained weights are available:<br />
