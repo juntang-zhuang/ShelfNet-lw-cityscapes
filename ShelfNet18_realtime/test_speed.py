@@ -21,8 +21,6 @@ def test():
     # official implementation
     #model = BiSeNet(19,criterion=None,ohem_criterion=None,is_training=False)
 
-    # diss implementation
-    #model = BiSeNet(19, None, None, None)
     print(model)
     # count parameter number
     pytorch_total_params = sum(p.numel() for p in model.parameters())
