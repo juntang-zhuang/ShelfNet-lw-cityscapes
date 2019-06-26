@@ -32,7 +32,7 @@ def test():
     run_time = list()
 
     for i in range(0,100):
-        input = torch.randn(1,3,1024,2048).cuda()
+        input = torch.randn(1,3,512,512).cuda()
         # ensure that context initialization and normal_() operations
         # finish before you start measuring time
         torch.cuda.synchronize()
