@@ -1,10 +1,10 @@
 # Anonymous-repo
 Anonymous repo to reproduce fast semantic segmentation results.
-This repo is based on two implementations of [BiSeNet1](https://github.com/CoinCheung/BiSeNet) and [TorchSeg](https://github.com/ycszen/TorchSeg), but we are not affiliated with any of them. This implementation takes about 24h on 2 GTX 1080Ti GPU.
+This repo is based on two implementations of [BiSeNet1](https://github.com/CoinCheung/BiSeNet) and [TorchSeg](https://github.com/ycszen/TorchSeg). This implementation takes about 24h on 2 GTX 1080Ti GPU.
 
 ## Data Preparation
 Download fine labelled dataset from Cityscapes server, and decompress into ```./data``` folder. <br />
-You might need to midify data path [here](https://github.com/NoName-sketch/anonymous/blob/master/ShelfNet18_realtime/train.py/#L58) and [here](https://github.com/NoName-sketch/anonymous/blob/master/ShelfNet18_realtime/evaluate.py/#L143)
+You might need to modify data path [here](https://github.com/NoName-sketch/anonymous/blob/master/ShelfNet18_realtime/train.py/#L58) and [here](https://github.com/NoName-sketch/anonymous/blob/master/ShelfNet18_realtime/evaluate.py/#L143)
 
 ## Two models and the pretrained weights
 We provide two models, ShelfNet18 with 32 base channels for real-time semantic segmentation, and ShelfNet34 with 64 base channels for non-real-time semantic segmentation. The pre-trained weights are available:<br />
