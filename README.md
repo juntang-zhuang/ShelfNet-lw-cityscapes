@@ -1,6 +1,6 @@
 # Anonymous-repo
 Anonymous repo to reproduce fast semantic segmentation results.
-This repo is based on two implementations of [BiSeNet1](https://github.com/CoinCheung/BiSeNet) and [TorchSeg](https://github.com/ycszen/TorchSeg). This implementation takes about 24h on 2 GTX 1080Ti GPU.
+This repo is based on two implementations of [BiSeNet](https://github.com/CoinCheung/BiSeNet) and [TorchSeg](https://github.com/ycszen/TorchSeg). This implementation takes about 24h on 2 GTX 1080Ti GPU.
 
 ## Data Preparation
 Download fine labelled dataset from Cityscapes server, and decompress into ```./data``` folder. <br />
