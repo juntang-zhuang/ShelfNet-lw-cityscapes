@@ -14,15 +14,12 @@ use_cuda = torch.cuda.is_available()
 
 from shelfnet import ShelfNet
 #from official_model_speed import BiSeNet
-#from model import BiSeNet
 def test():
     model = ShelfNet(n_classes=19)
 
     # official implementation
     #model = BiSeNet(19,criterion=None,ohem_criterion=None,is_training=False)
 
-    # diss implementation
-    #model = BiSeNet(19, None, None, None)
     print(model)
     # count parameter number
     pytorch_total_params = sum(p.numel() for p in model.parameters())
