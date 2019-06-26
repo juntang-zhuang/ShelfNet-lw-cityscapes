@@ -7,9 +7,7 @@ Download fine labelled dataset from Cityscapes server, and decompress into ```./
 You might need to modify data path [here](https://github.com/NoName-sketch/anonymous/blob/master/ShelfNet18_realtime/train.py/#L58) and [here](https://github.com/NoName-sketch/anonymous/blob/master/ShelfNet18_realtime/evaluate.py/#L143)
 
 ## Two models and the pretrained weights
-We provide two models, ShelfNet18 with 32 base channels for real-time semantic segmentation, and ShelfNet34 with 64 base channels for non-real-time semantic segmentation. The pre-trained weights are available:<br />
-[Res18 backbone](https://www.dropbox.com/s/ozfaxuo8be610ko/ShelfNet18_realtime.pth?dl=0) <br />
-[Res34 backbone](https://www.dropbox.com/s/az41ud5qipp173c/ShelfNet34_non_realtime.pth?dl=0) <br />
+We provide two models, ShelfNet18 with 32 base channels for real-time semantic segmentation, and ShelfNet34 with 64 base channels for non-real-time semantic segmentation. The pre-trained weights are available in folder ```res```
 You might need to change checkpoint names to match the file name in ```evaluate.py```
 
 ## How to run with PyTorch 1
