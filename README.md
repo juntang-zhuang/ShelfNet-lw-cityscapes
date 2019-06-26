@@ -10,8 +10,8 @@ We provide two models, ShelfNet18 with 32 base channels for real-time semantic s
 [ShelfNet18](https://www.dropbox.com/s/ozfaxuo8be610ko/ShelfNet18_realtime.pth?dl=0) <br />
 [ShelfNet34](https://www.dropbox.com/s/az41ud5qipp173c/ShelfNet34_non_realtime.pth?dl=0) <br />
 
-## Distributed training with PyTorch1
-training code
+## How to run with PyTorch 1
+training
 ```
 CUDA_VISIBLE_DEVICES=0,1 python -m torch.distributed.launch --nproc_per_node=2 train.py
 ```
@@ -19,4 +19,14 @@ CUDA_VISIBLE_DEVICES=0,1 python -m torch.distributed.launch --nproc_per_node=2 t
 evalate on validation set
 ```
 python evaluate.py
+```
+
+test running speed of ShelfNet
+```
+python test_speed.py
+```
+
+test running speed of Lightweight refinenet
+```
+python test_LWRF_speed.py
 ```
