@@ -44,7 +44,7 @@ class ConvBNReLU(nn.Module):
 
 class NetOutput(nn.Module):
     def __init__(self, in_chan, mid_chan, n_classes, *args, **kwargs):
-        super(BiSeNetOutput, self).__init__()
+        super(NetOutput, self).__init__()
         self.conv = ConvBNReLU(in_chan, mid_chan, ks=3, stride=1, padding=1)
         self.conv_out = nn.Conv2d(mid_chan, n_classes, kernel_size=3, bias=False,
                                   padding=1)
@@ -121,7 +121,7 @@ class ShelfNet(nn.Module):
         wd_params, nowd_params, lr_mul_wd_params, lr_mul_nowd_params = [], [], [], []
         for name, child in self.named_children():
             child_wd_params, child_nowd_params = child.get_params()
-            if isinstance(child, LadderBlock) or isinstance(child, BiSeNetOutput) or isinstance(child, Decoder)\
+            if isinstance(child, LadderBlock) or isinstance(child, NetOutput) or isinstance(child, Decoder)\
                     or isinstance(child, ConvBNReLU):
                 lr_mul_wd_params += child_wd_params
                 lr_mul_nowd_params += child_nowd_params
