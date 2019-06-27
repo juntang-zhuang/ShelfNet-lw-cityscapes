@@ -42,9 +42,9 @@ class ConvBNReLU(nn.Module):
         return wd_params, nowd_params
 
 
-class BiSeNetOutput(nn.Module):
+class NetOutput(nn.Module):
     def __init__(self, in_chan, mid_chan, n_classes, *args, **kwargs):
-        super(BiSeNetOutput, self).__init__()
+        super(NetOutput, self).__init__()
         self.conv = ConvBNReLU(in_chan, mid_chan, ks=3, stride=1, padding=1)
         self.conv_out = nn.Conv2d(mid_chan, n_classes, kernel_size=3, bias=False,
                                   padding=1)
@@ -81,9 +81,9 @@ class ShelfNet(nn.Module):
         self.decoder = Decoder(planes=64,layers=3,kernel=3)
         self.ladder = LadderBlock(planes=64,layers=3, kernel=3)
 
-        self.conv_out = BiSeNetOutput(64, 64, n_classes)
-        self.conv_out16 = BiSeNetOutput(128, 64, n_classes)
-        self.conv_out32 = BiSeNetOutput(256, 64, n_classes)
+        self.conv_out = NetOutput(64, 64, n_classes)
+        self.conv_out16 = NetOutput(128, 64, n_classes)
+        self.conv_out32 = NetOutput(256, 64, n_classes)
 
         self.trans1 = ConvBNReLU(128,64,ks=1,stride=1,padding=0)
         self.trans2 = ConvBNReLU(256, 128, ks=1, stride=1, padding=0)
