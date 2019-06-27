@@ -137,7 +137,7 @@ class ShelfNet(nn.Module):
         wd_params, nowd_params, lr_mul_wd_params, lr_mul_nowd_params = [], [], [], []
         for name, child in self.named_children():
             child_wd_params, child_nowd_params = child.get_params()
-            if isinstance(child, LadderBlock) or isinstance(child, BiSeNetOutput) or isinstance(child, Decoder)\
+            if isinstance(child, LadderBlock) or isinstance(child, NetOutput) or isinstance(child, Decoder)\
                     or isinstance(child, ConvBNReLU):
                 lr_mul_wd_params += child_wd_params
                 lr_mul_nowd_params += child_nowd_params
