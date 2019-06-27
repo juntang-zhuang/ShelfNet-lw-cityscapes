@@ -13,7 +13,13 @@ You might need to modify data path [here](https://github.com/NoName-sketch/anony
 ## Two models and the pretrained weights
 We provide two models, ShelfNet18 with 32 base channels for real-time semantic segmentation, and ShelfNet34 with 64 base channels for non-real-time semantic segmentation. <br/>Pretrained weights for [ShelfNet18](https://www.dropbox.com/s/84ol8lk99qcis9p/ShelfNet18_realtime.pth?dl=0) and [ShelfNet34](https://www.dropbox.com/s/q9jae02qe27wwa3/ShelfNet34_non_realtime.pth?dl=0).
 
-## How to run with PyTorch 1
+## Requirements
+PyTorch 1.0 or higher <br/>
+python3 <br/>
+scikit-image <br/>
+tqdm<br/>
+
+## How to run
 Find the folder (```cd ShelfNet18_realtime``` or ```cd ShelfNet34_non_realtime```)
 
 training
