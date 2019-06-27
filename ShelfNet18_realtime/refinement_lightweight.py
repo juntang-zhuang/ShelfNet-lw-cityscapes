@@ -1,4 +1,5 @@
-"""RefineNet-LightWeight
+"""RefineNet-LightWeight, forked from official implementation.
+
 RefineNet-LigthWeight PyTorch for non-commercial purposes
 Copyright (c) 2018, Vladimir Nekrasov (vladimir.nekrasov@adelaide.edu.au)
 All rights reserved.
