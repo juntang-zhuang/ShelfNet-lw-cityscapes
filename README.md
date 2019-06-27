@@ -8,7 +8,15 @@ ShelfNet34 non real-time: [https://www.cityscapes-dataset.com/anonymous-results/
 
 ## Data Preparation
 Download fine labelled dataset from Cityscapes server, and decompress into ```./data``` folder. <br />
-You might need to modify data path [here](https://github.com/NoName-sketch/anonymous/blob/master/ShelfNet18_realtime/train.py/#L58) and [here](https://github.com/NoName-sketch/anonymous/blob/master/ShelfNet18_realtime/evaluate.py/#L143)
+You might need to modify data path [here](https://github.com/NoName-sketch/anonymous/blob/master/ShelfNet18_realtime/train.py/#L58) and [here](https://github.com/NoName-sketch/anonymous/blob/master/ShelfNet18_realtime/evaluate.py/#L143)<br/>
+```
+$ mkdir -p data
+$ mv /path/to/leftImg8bit_trainvaltest.zip data
+$ mv /path/to/gtFine_trainvaltest.zip data
+$ cd data
+$ unzip leftImg8bit_trainvaltest.zip
+$ unzip gtFine_trainvaltest.zip
+```
 
 ## Two models and the pretrained weights
 We provide two models, ShelfNet18 with 32 base channels for real-time semantic segmentation, and ShelfNet34 with 64 base channels for non-real-time semantic segmentation. <br/>Pretrained weights for [ShelfNet18](https://www.dropbox.com/s/84ol8lk99qcis9p/ShelfNet18_realtime.pth?dl=0) and [ShelfNet34](https://www.dropbox.com/s/q9jae02qe27wwa3/ShelfNet34_non_realtime.pth?dl=0).
