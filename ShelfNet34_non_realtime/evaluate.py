@@ -65,7 +65,7 @@ class MscEval(object):
 
     def crop_eval(self, im):
         cropsize = self.cropsize
-        stride_rate = 1.0
+        stride_rate = 5.0/6.0
         N, C, H, W = im.size()
         long_size, short_size = (H,W) if H>W else (W,H)
         if long_size < cropsize:
