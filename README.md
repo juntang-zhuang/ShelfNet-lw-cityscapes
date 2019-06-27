@@ -1,6 +1,7 @@
 # Anonymous-repo
 Anonymous repo to reproduce fast semantic segmentation results.
 This repo is based on two implementations of [BiSeNet](https://github.com/CoinCheung/BiSeNet) and [TorchSeg](https://github.com/ycszen/TorchSeg). This implementation takes about 24h on 2 GTX 1080Ti GPU.
+Pretrained weights for [ShelfNet18](https://www.dropbox.com/s/84ol8lk99qcis9p/ShelfNet18_realtime.pth?dl=0) and [ShelfNet34](https://www.dropbox.com/s/q9jae02qe27wwa3/ShelfNet34_non_realtime.pth?dl=0).
 
 ## Data Preparation
 Download fine labelled dataset from Cityscapes server, and decompress into ```./data``` folder. <br />
