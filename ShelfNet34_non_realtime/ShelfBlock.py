@@ -3,7 +3,7 @@ import torch.nn.functional as F
 import torch.nn as nn
 from torch.nn import BatchNorm2d
 from modules.bn import InPlaceABNSync
-drop = 0.1
+drop = 0.0
 
 def conv3x3(in_planes, out_planes, stride=1):
     """3x3 convolution with padding"""
