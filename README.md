@@ -1,5 +1,5 @@
 # Anonymous-repo
-Anonymous repo to reproduce fast semantic segmentation results.
+Anonymous repo to reproduce fast semantic segmentation results (ShelfNet-LW).
 This repo is based on two implementations [Implementation 1](https://github.com/ycszen/TorchSeg) and [Implementation 2](https://github.com/CoinCheung/BiSeNet). This implementation takes about 24h on 2 GTX 1080Ti GPU. <br/>
 
 ## Link to results on Cityscapes test set
