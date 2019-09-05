@@ -1,4 +1,4 @@
-# ShelfNet-lightweight for paper (ShelfNet for fast semantic segmentation)
+# ShelfNet-lightweight for paper ([ShelfNet for fast semantic segmentation](https://arxiv.org/abs/1811.11254))
 * This repo contains implementation of ShelfNet-lightweight models for real-time models on Cityscapes. <br/>
 * For real-time tasks, we achieved 74.8% mIoU on Ctiyscapes dataset at a 36.9 FPS on 1024x2048 images. <br/>
 * For non real-time tasks, we achieved 79.0% mIoU on Cityscapes test set with ResNet34 backbone, suparssing other models (PSPNet and BiSeNet) with largers backbones with ResNet50 or Resnet 101 backbone. <br/>
